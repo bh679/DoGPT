@@ -24,15 +24,16 @@ namespace BrennanHatton.AI
 		public TextAsset[] prePrompts, postPrompts;
 		public GPTInput[] inputs;
 		public GPT3 gpt;
+		public string prompt;
 		
 		void Reset()
 		{
 			gpt = FindObjectOfType<GPT3>();
 		}
 		
-		public void Run()
+		public void GeneratePrompt()
 		{
-			string prompt = "";
+			prompt = "";
 			
 			for(int i = 0 ; i < prePrompts.Length; i++)
 				prompt += prePrompts[i] + "\n\n";
@@ -44,10 +45,18 @@ namespace BrennanHatton.AI
 			
 			for(int i = 0 ; i < postPrompts.Length; i++)
 				prompt += postPrompts[i] + "\n\n";
-			
+		}
+		
+		public void Run()
+		{
 			gpt.Execute(prompt);
+		}
+		
+		public void GenerateAndRun()
+		{
+			GeneratePrompt();
 			
-			
+			Run();
 		}
 	}
 

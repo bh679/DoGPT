@@ -1,5 +1,6 @@
 # DoGPT - GPT for Dogs
 
+A smart phone app using spech-to-text, open ai's GPT3 and text-to-speech to allow you to talk to your pets and have the ai respond on their behalf.
 
 ## Pre-Installed <br />
 [BrennanHattons Unity Toools](https://github.com/bh679/Unity-Tools) <br />

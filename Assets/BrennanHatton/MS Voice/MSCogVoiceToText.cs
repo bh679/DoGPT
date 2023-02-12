@@ -18,13 +18,13 @@ using System.Collections;
 [System.Serializable]
 public class Text2SpeechResults
 {
-	public string messages;
-	public float time;
+	public string message;
+	//public float time;
 	
 	public Text2SpeechResults(string _message)
 	{
-		messages = _message;
-		time = Time.time;
+		message = _message;
+		//time = System.DateTime.Now.to;
 	}
 }
 
@@ -43,7 +43,7 @@ public class MSCogVoiceToText : MonoBehaviour
 
 	private bool micPermissionGranted = false;
 
-	[HideInInspector]
+	//[HideInInspector]
 	public List<Text2SpeechResults> results = new List<Text2SpeechResults>();
 
 #if PLATFORM_ANDROID || PLATFORM_IOS
@@ -79,6 +79,7 @@ public class MSCogVoiceToText : MonoBehaviour
 			if (result.Reason == ResultReason.RecognizedSpeech)
 			{
 				newMessage = result.Text;
+				results.Add(new Text2SpeechResults(newMessage));
 			}
 			else if (result.Reason == ResultReason.NoMatch)
 			{
@@ -159,7 +160,7 @@ public class MSCogVoiceToText : MonoBehaviour
 			if (outputText != null)
 			{
 				outputText.text = message;
-				results.Add(new Text2SpeechResults(message));
+				//results.Add(new Text2SpeechResults(message));
 			}
 		}
 	}

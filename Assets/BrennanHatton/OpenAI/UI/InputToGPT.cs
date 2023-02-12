@@ -10,8 +10,7 @@ namespace BrennanHatton.AI
 	{
 		public GPT3 gpt;
 		public TMP_InputField input;
-		public TextAsset[] prePromptText, postPromptText;
-		public string prePrompt, postPrompt;
+		public PromptWrapper promptWrapper;
 		
 		void Reset()
 		{
@@ -21,17 +20,7 @@ namespace BrennanHatton.AI
 		
 		public void AskGPT()
 		{
-			string prompt = "";
-			
-			for(int i = 0; i < prePromptText.Length; i++)
-				prompt += prePromptText[i].text;
-			
-			prompt = prePrompt + input.text + postPrompt;
-			
-			
-			for(int i = 0; i < prePromptText.Length; i++)
-				prompt += postPromptText[i].text;
-			gpt.Execute(prompt);
+			gpt.Execute(promptWrapper.wrapPromopt(input.text));
 		}
 	}
 

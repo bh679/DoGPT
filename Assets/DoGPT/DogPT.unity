@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8554114270210210257, guid: e251c2c6397a7b04cbee5ba1867cbf85, type: 3}
   m_PrefabInstance: {fileID: 1906256513}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1980950969}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 280587dff7d5c7e45ae35ef0a8820e18, type: 3}
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   inputs:
   - name: Name
     input: {fileID: 1799589932}
-    prePrompt: {fileID: 4900000, guid: 9008ff5f087a9df4ca42ed8032dbb7a9, type: 3}
+    prePrompt: {fileID: 4900000, guid: 273d6cc04ab17664a8cfc197a3200f98, type: 3}
     postPrompt: {fileID: 0}
   - name: Breed
     input: {fileID: 1643458229}
@@ -2673,7 +2673,7 @@ MonoBehaviour:
     prePrompt: {fileID: 4900000, guid: 0d77763d6c8d8c948ac72c86107dbb64, type: 3}
     postPrompt: {fileID: 0}
   gpt: {fileID: 2128200004}
-  prompt: 
+  prompt: why
 --- !u!1 &1591701740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,6 +3837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8554114270210210256, guid: e251c2c6397a7b04cbee5ba1867cbf85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8554114270210210257, guid: e251c2c6397a7b04cbee5ba1867cbf85, type: 3}
       propertyPath: SpeechAPIKey
       value: 
@@ -3955,6 +3959,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1980950969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8554114270210210256, guid: e251c2c6397a7b04cbee5ba1867cbf85, type: 3}
+  m_PrefabInstance: {fileID: 1906256513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1980950972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980950969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc573dfc5059b624c92d694701658d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechManager: {fileID: 1370024513}
+  gpt: {fileID: 2128200004}
 --- !u!1 &2128200003
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,7 +3988,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2128200005}
   - component: {fileID: 2128200004}
-  - component: {fileID: 2128200006}
   m_Layer: 0
   m_Name: OpenAI GPT3
   m_TagString: Untagged
@@ -4009,20 +4031,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2128200006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128200003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc573dfc5059b624c92d694701658d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speechManager: {fileID: 1370024513}
-  gpt: {fileID: 2128200004}
 --- !u!1 &2129854763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4287,17 +4295,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Response
       objectReference: {fileID: 0}
-    - target: {fileID: 4284334539835998374, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_RootOrder
@@ -4305,27 +4309,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1170
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 169.3059
+      value: 169.30591
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4361,7 +4365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1181.3472
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6889258977303894671, guid: 6c50354dd84a4294eb55826f9284a62a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -28,6 +28,7 @@ namespace BrennanHatton.AI
 			//make new item
 			SingleResponseDisplay response = Instantiate(singleResposeDisplayPrefab, origin.localPosition,origin.localRotation,this.transform);
 			((RectTransform)response.transform).SetLocalPositionAndRotation(origin.localPosition,origin.localRotation);
+			response.gameObject.SetActive(true);
 			response.SetResponse(data);
 			
 			//move all down

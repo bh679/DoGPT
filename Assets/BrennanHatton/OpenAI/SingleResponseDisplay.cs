@@ -18,7 +18,7 @@ namespace BrennanHatton.AI
 		{
 			tmpText = this.GetComponentInChildren<TMP_Text>();
 			paddingTop = -tmpText.rectTransform.rect.position.y;
-			lineHeight = tmpText.fontSize;
+			lineHeight = tmpText.fontSize*1.15f;
 			paddingBottom = ((RectTransform)this.transform).rect.height - (paddingTop+lineHeight);
 		}
 		
@@ -33,53 +33,26 @@ namespace BrennanHatton.AI
 			if(text == tmpText.text)
 				return;
 				
+			Debug.Log(tmpText.textInfo);
 			tmpText.SetText(text);
+			Debug.Log(tmpText.textInfo);
 			tmpText.ForceMeshUpdate();
 			
-			
-			Debug.Log(tmpText.textInfo.lineCount);
-			
-			
-			height = paddingTop + 
-				tmpText.textInfo.lineCount*lineHeight+
-				paddingBottom;;
-			((RectTransform)this.transform).SetHeight(height);
-			
-			//StartCoroutine(adjustOnTextSize());
+			StartCoroutine(adjustheight());
 			
 		}
 		
-		IEnumerator adjustOnTextSize()
+		IEnumerator adjustheight()
 		{
-			var oldInfo = tmpText.textInfo;
-			Debug.Log(tmpText.textInfo.lineCount);
-			
-			while(oldInfo == tmpText.textInfo)
-			{
+			while(tmpText.textInfo == null)
 				yield return new WaitForEndOfFrame();
-			}
-			
-			Debug.Log(tmpText.textInfo.lineCount);
-			
 			
 			height = paddingTop + 
 				tmpText.textInfo.lineCount*lineHeight+
-				paddingBottom;;
+				paddingBottom;
+				
 			((RectTransform)this.transform).SetHeight(height);
-			
 		}
-		
-	    // Start is called before the first frame update
-	    void Start()
-	    {
-	        
-	    }
-	
-	    // Update is called once per frame
-	    void Update()
-	    {
-	        
-	    }
 	}
 
 }

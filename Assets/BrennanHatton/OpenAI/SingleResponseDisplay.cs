@@ -30,8 +30,37 @@ namespace BrennanHatton.AI
 		
 		void SetText(string text)
 		{
+			if(text == tmpText.text)
+				return;
+				
+			tmpText.SetText(text);
+			tmpText.ForceMeshUpdate();
 			
-			tmpText.text = text;
+			
+			Debug.Log(tmpText.textInfo.lineCount);
+			
+			
+			height = paddingTop + 
+				tmpText.textInfo.lineCount*lineHeight+
+				paddingBottom;;
+			((RectTransform)this.transform).SetHeight(height);
+			
+			//StartCoroutine(adjustOnTextSize());
+			
+		}
+		
+		IEnumerator adjustOnTextSize()
+		{
+			var oldInfo = tmpText.textInfo;
+			Debug.Log(tmpText.textInfo.lineCount);
+			
+			while(oldInfo == tmpText.textInfo)
+			{
+				yield return new WaitForEndOfFrame();
+			}
+			
+			Debug.Log(tmpText.textInfo.lineCount);
+			
 			
 			height = paddingTop + 
 				tmpText.textInfo.lineCount*lineHeight+

@@ -11,6 +11,7 @@ namespace BrennanHatton.AI
 		public RectTransform origin;
 		public SingleResponseDisplay singleResposeDisplayPrefab;
 		public List<SingleResponseDisplay> responses = new List<SingleResponseDisplay>();
+		RectTransform rect;
 		
 		void Reset()
 		{
@@ -21,6 +22,7 @@ namespace BrennanHatton.AI
 	    void Start()
 	    {
 		    gpt3.onResults.AddListener(AddResponse);
+		    rect = (RectTransform)this.transform;
 	    }
 	    
 		public void AddResponse(InteractionData data)
@@ -34,7 +36,18 @@ namespace BrennanHatton.AI
 			//move all down
 			for(int i = 0; i < responses.Count; i++)
 			{
+				responses[i].gameObject.SetActive(true);
 				responses[i].transform.position = responses[i].transform.position + Vector3.down*response.Height;
+				
+				//Debug.Log(i+": "+Mathf.Abs(responses[i].transform.position.y) + " > " + rect.GetHeight());
+				//Debug.Log(responses[i].transform.position.y );
+				
+				if(responses[i].transform.position.y < 0)
+				{
+					responses[i].gameObject.SetActive(false);
+					
+					//i = responses.Count;
+				}
 			}
 			
 			

@@ -19,6 +19,7 @@
 /[Aa]ssets/PolygonHorrorMansion/*
 /[Aa]ssets/ExplosiveLLC/*
 /[Aa]ssets/TextMesh Pro/*
+/[Aa]ssets/ClearFlatIcon/*
 
 #Private Keys & Webhooks
 /[Aa]ssets/BrennanHatton/Webhooks/*.txt
@@ -72,3 +73,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#Compression Files
+*.zip
+*.rar

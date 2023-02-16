@@ -19,8 +19,8 @@
 /[Aa]ssets/PolygonHorrorMansion/*
 /[Aa]ssets/ExplosiveLLC/*
 /[Aa]ssets/TextMesh Pro/*
-/[Aa]ssets/ClearFlatIcon
-/[Aa]ssets/FrostweepGames
+/[Aa]ssets/CleanFlatIcon*
+/[Aa]ssets/FrostweepGames*
 
 #Private Keys & Webhooks
 /[Aa]ssets/BrennanHatton/Webhooks/*.txt

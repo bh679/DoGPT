@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DoGPT/DogPT.unity
+    guid: c109b446754e8c64e835c58c98389a86
   m_configObjects: {}

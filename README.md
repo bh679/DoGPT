@@ -12,10 +12,13 @@ It was actually pretty easy to get working, only took a day to do.
 human voice -> text -> promp -> GPT -> text result -> ai voice.
 
 Its working, but GPT isn't as good at pending to be a dog as I thought it would be. GPT is usually rather good at role-playing. One of the things I think it does best, so maybe I just need to work the prompt a bit more. So far it si mostly just saying "woof" to what I say to it, or acting too human. hahahaha
-I called it "DOGPT open sourced it here:
 
+## Latest Builds
+[Google Drive](https://drive.google.com/drive/folders/1ECG7gGsVpLXEzRe00n2ucfhqfAdXYm4Z?usp=sharing)
 
 ## Pre-Installed <br />
 [BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) <br />
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />
 [MSTextToSpeech](https://github.com/ActiveNick/Unity-Text-to-Speech/tree/master/Assets) <br />
+
+![image](https://user-images.githubusercontent.com/2542558/219519371-8516aba0-c3dc-4032-91d4-8f40a7b4efa6.png)

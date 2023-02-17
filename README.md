@@ -21,5 +21,6 @@ Its working, but GPT isn't as good at pending to be a dog as I thought it would 
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />
 [MSTextToSpeech](https://github.com/ActiveNick/Unity-Text-to-Speech/tree/master/Assets) <br />
 
-## Screenshots
-![image](https://user-images.githubusercontent.com/2542558/219519371-8516aba0-c3dc-4032-91d4-8f40a7b4efa6.png)
+## [Youtube Demo](https://youtu.be/1si3kkHxp9U)
+
+[![Demo of DOGPT 0.0.3](https://user-images.githubusercontent.com/2542558/219532489-f9347879-f4d8-43c3-9e49-b316e0352fd1.png)](https://youtu.be/1si3kkHxp9U)

@@ -1869,8 +1869,8 @@ MonoBehaviour:
     postPrompt: '}'
     prePromptText: []
     postPromptText: []
-    preInput: {fileID: 683368318}
-    postInput: {fileID: 0}
+    preInput: {fileID: 0}
+    postInput: {fileID: 683368318}
 --- !u!1 &592681260
 GameObject:
   m_ObjectHideFlags: 0

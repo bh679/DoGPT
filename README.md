@@ -16,10 +16,15 @@ Its working, but GPT isn't as good at pending to be a dog as I thought it would 
 ## Latest Builds
 [Google Drive](https://drive.google.com/drive/folders/1ECG7gGsVpLXEzRe00n2ucfhqfAdXYm4Z?usp=sharing)
 
-# Requirements
+## Requirements
 [BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) <br />
-MS Cognative Services API Key
-OpenAI API Key
+MS Cognative Services API Key<br />
+OpenAI API Key<br />
+
+## Installation
+ - Clone
+ - Adding Unity Tools
+ - Get API keys & reference in scene.
 
 ## Pre-Installed <br />
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />

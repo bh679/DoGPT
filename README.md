@@ -25,11 +25,15 @@ OpenAI API Key<br />
  - Clone
  - Adding Unity Tools
  - Get API keys & reference in scene.
+ - Import TMP Escentials. 
 
 ### Common Issues
  - If using MacOS, you may need to grant secuirty permissions before MS Cog can run.
 <img width="300" alt="Screenshot 2023-02-24 at 2 22 35 pm" src="https://user-images.githubusercontent.com/2542558/221084769-837dafc3-34ad-40c9-b99f-2a4cf796fd52.png">
 TO do this, click the ? and follow the instructions to allow permissions in Secuirty and Privacy.
+
+- If you are getting this pop-up, be sure to import escentials
+<img width="664" alt="Screenshot 2023-02-24 at 2 42 29 pm" src="https://user-images.githubusercontent.com/2542558/221086735-8f14eb3d-07fe-48c9-92d4-a7eaaae34526.png">
 
 
 ## Pre-Installed <br />

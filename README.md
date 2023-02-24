@@ -18,6 +18,8 @@ Its working, but GPT isn't as good at pending to be a dog as I thought it would 
 
 # Requirements
 [BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) <br />
+MS Cognative Services API Key
+OpenAI API Key
 
 ## Pre-Installed <br />
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />

@@ -17,13 +17,14 @@ PluginImporter:
       settings:
         Exclude Android: 1
         Exclude Editor: 0
-        Exclude Linux: 1
+        Exclude Linux: 0
         Exclude Linux64: 1
-        Exclude LinuxUniversal: 1
+        Exclude LinuxUniversal: 0
         Exclude OSXUniversal: 1
         Exclude Win: 0
         Exclude Win64: 0
         Exclude WindowsStoreApps: 0
+        Exclude iOS: 1
   - first:
       Android: Android
     second:
@@ -52,13 +53,13 @@ PluginImporter:
   - first:
       Facebook: Win64
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: AnyCPU
   - first:
       Standalone: Linux
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: None
   - first:
@@ -70,7 +71,7 @@ PluginImporter:
   - first:
       Standalone: LinuxUniversal
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86
   - first:
@@ -78,7 +79,7 @@ PluginImporter:
     second:
       enabled: 0
       settings:
-        CPU: x86_64
+        CPU: None
   - first:
       Standalone: Win
     second:
@@ -101,6 +102,14 @@ PluginImporter:
         PlaceholderPath: 
         SDK: UWP
         ScriptingBackend: AnyScriptingBackend
+  - first:
+      iPhone: iOS
+    second:
+      enabled: 0
+      settings:
+        AddToEmbeddedBinaries: false
+        CompileFlags: 
+        FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 

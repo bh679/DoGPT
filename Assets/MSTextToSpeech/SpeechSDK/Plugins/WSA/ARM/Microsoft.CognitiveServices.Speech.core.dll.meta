@@ -24,6 +24,7 @@ PluginImporter:
         Exclude Win: 1
         Exclude Win64: 1
         Exclude WindowsStoreApps: 0
+        Exclude iOS: 1
   - first:
       Android: Android
     second:
@@ -101,6 +102,14 @@ PluginImporter:
         PlaceholderPath: 
         SDK: UWP
         ScriptingBackend: AnyScriptingBackend
+  - first:
+      iPhone: iOS
+    second:
+      enabled: 0
+      settings:
+        AddToEmbeddedBinaries: false
+        CompileFlags: 
+        FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 
